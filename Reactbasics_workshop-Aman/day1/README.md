@@ -56,7 +56,6 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 > ![Desktop Screenshot](Screenshots/page_1.png)  
 > ![Screenshot 2](Screenshots/page_2.png)  
 > ![Screenshot 3](Screenshots/page_3.png)
-> ![Mobile Screenshot](./screenshot-mobile.png)
 
 ---
 
