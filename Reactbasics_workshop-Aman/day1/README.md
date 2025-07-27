@@ -1,11 +1,11 @@
-# 🚀 Aman Jha Portfolio – Day 1 Frontend Bedrock
+# Aman Jha Portfolio – Day 1 Frontend Bedrock
 
 Welcome to my **modern, interactive portfolio** – built as part of the React Basics Workshop, Day 1!  
 This site is a showcase of my skills, projects, and frontend fundamentals, featuring a sleek UI, dark mode, and dynamic content.
 
 ---
 
-## 🌟 Highlights
+## Highlights
 
 - 🎨 **Dark/Light Mode Toggle** – Instantly switch themes for any mood
 - 🏆 **Animated Gradient Header & Footer** – Eye-catching, modern branding
@@ -16,7 +16,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 📂 File Structure
+## File Structure
 
 ```
 .
@@ -28,7 +28,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 🧑‍💻 How to Use
+## How to Use
 
 1. **Clone or Download** this repository.
 2. Open `index.html` in your browser.
@@ -36,7 +36,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 🛠️ Customization Tips
+## Customization Tips
 
 - **Skills & Tools:**  
   Edit the `<section id="skills">` in `index.html` to show off your own stack and icons.
@@ -49,7 +49,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 > _Adding screenshots of my site here!_
 >
@@ -59,7 +59,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 📝 Workshop Requirements Checklist
+## Workshop Requirements Checklist
 
 - [x] Semantic HTML5 structure (`header`, `nav`, `main`, `section`, `footer`)
 - [x] Contact form with name, email, message
@@ -73,7 +73,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## 🙏 Credits
+## Credits
 
 - [Font Awesome](https://fontawesome.com/) for icons
 
