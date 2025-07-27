@@ -51,7 +51,7 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ## 📸 Screenshots
 
-> _Add screenshots of your site here!_
+> _Adding screenshots of my site here!_
 >
 > ![Desktop Screenshot](Screenshots/page_1.png)  
 > ![Screenshot 2](Screenshots/page_2.png)  
