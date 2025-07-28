@@ -36,19 +36,6 @@ This site is a showcase of my skills, projects, and frontend fundamentals, featu
 
 ---
 
-## Customization Tips
-
-- **Skills & Tools:**  
-  Edit the `<section id="skills">` in `index.html` to show off your own stack and icons.
-
-- **Projects:**  
-  Add your projects to the JavaScript array in `script.js` – they’ll appear automatically.
-
-- **Contact Form:**  
-  The form is ready for backend/email integration. Validation is built-in!
-
----
-
 ## Screenshots
 
 > _Adding screenshots of my site here!_
