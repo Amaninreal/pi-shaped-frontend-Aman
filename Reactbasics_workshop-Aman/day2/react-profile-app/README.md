@@ -25,7 +25,8 @@ A beautiful, modern React app displaying profile cards with animated rainbow-lik
 
 ## Demo
 
-![Profile card app](screenshots/image.png)(screenshots/profilecard.webm)
+![Profile card app](screenshots/image.png)
+[![Profile card](screenshots/image.png)](screenshots/profilecard.webm)
 
 ---
 
