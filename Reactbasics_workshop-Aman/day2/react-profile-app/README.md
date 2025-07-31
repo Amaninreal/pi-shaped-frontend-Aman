@@ -1,4 +1,4 @@
-# React Profile Cards with Animated Gradient Background
+# React Profile Cards - Day 2 Assignment
 
 A beautiful, modern React app displaying profile cards with animated rainbow-like gradient backgrounds, avatars, badges, social media links, and toggleable bios — styled with CSS Modules and powered by React + TypeScript.
 
