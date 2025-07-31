@@ -1,7 +1,6 @@
 import ProfileCard from './components/ProfileCard';
 import './App.css';
 
-// Sample avatars—you can use placeholder images if needed (e.g., via https://i.pravatar.cc/)
 const users = [
   {
     name: "Alice Johnson",
