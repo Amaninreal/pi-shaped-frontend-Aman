@@ -32,7 +32,7 @@ A beautiful, modern React app displaying profile cards with animated rainbow-lik
 
 ### Prerequisites
 
-- Node.js (LTS recommended)
+- Node.js
 - npm or yarn package manager
 
 ### Installation
