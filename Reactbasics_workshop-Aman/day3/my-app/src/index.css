@@ -1,0 +1,224 @@
+/* for light mode */
+:root {
+  --font-color: #213547;
+  --bg-gradient: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+  --card-bg: rgba(255, 255, 255, 0.6);
+  --card-border: rgba(255, 255, 255, 0.3);
+  --input-bg: #fff;
+  --input-border: #ccc;
+  --primary-color: #007BFF;
+  --primary-color-hover: #0056b3;
+}
+
+/* for dark mode */
+:root.dark {
+  --font-color: #f4f4f5;
+  --bg-gradient: linear-gradient(135deg, #1f005c, #5b0060, #870160, #ac255e, #ca485c);
+  --card-bg: rgba(0, 0, 0, 0.4);
+  --card-border: rgba(255, 255, 255, 0.1);
+  --input-bg: #2a1a3a;
+  --input-border: #4a2a5a;
+  --primary-color: #00d9ff; 
+  --primary-color-hover: #00a4c2;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg-gradient);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; 
+  background-attachment: fixed;
+  color: var(--font-color);
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Card style for all component wrappers */
+.card {
+  background-color: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Headings */
+h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.19;
+  color: var(--font-color);
+  margin-bottom: 1.2rem;
+  text-shadow: 0 3px 24px #aabcee23;
+}
+
+h2 {
+  font-family: 'Georgia', Playfair Display, serif;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  line-height: 1.19;
+  color: var(--font-color);
+  margin-bottom: 1.2rem;
+  text-shadow: 0 3px 24px #aabcee23;
+}
+
+/* Buttons and selects */
+button,
+select {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.25s, transform 0.2s;
+  margin: 0 0.25rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+button:hover,
+select:hover {
+  background-color: var(--primary-color-hover);
+  transform: translateY(-2px);
+}
+
+/* Inputs */
+input {
+  border-radius: 8px;
+  border: 1px solid var(--input-border);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--input-bg);
+  color: var(--font-color);
+  margin: 0 0.25rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px var(--primary-color-hover);
+  outline: none;
+}
+
+/* Counter value with dynamic coloring */
+.counter-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin: 1rem 0 1.5rem;
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  transition: 
+    color 0.3s ease, 
+    border-color 0.3s ease, 
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  user-select: none;
+}
+
+.counter-value.positive {
+  color: #2b8a3e;
+  background-color: #d9f0d9;
+  border-color: #2b8a3e;
+  box-shadow: 0 0 8px #2b8a3e66;
+}
+
+.counter-value.negative {
+  color: #c92a2a;
+  background-color: #f7d6d6;
+  border-color: #c92a2a;
+  box-shadow: 0 0 8px #c92a2a66;
+}
+
+.counter-value.zero {
+  color: #495057;
+  background-color: #e1e4e6;
+  border-color: #495057;
+  box-shadow: none;
+}
+
+/* Item list styling */
+.item-list {
+  list-style: none;
+  padding: 0;
+}
+
+.item-list li {
+  background-color: var(--input-bg);
+  padding: 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+  font-weight: 500;
+}
+
+/* Top controls (dropdowns etc) */
+.top-controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Responsive spacing for smaller screens */
+@media (max-width: 500px) {
+  .top-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  button,
+  select,
+  input {
+    margin: 0.25rem 0;
+    width: 100%;
+  }
+
+  .card {
+    background-color: var(--card-bg);
+    border: 1.5px solid var(--card-border);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: left;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+}
+
