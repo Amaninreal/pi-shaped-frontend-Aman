@@ -17,8 +17,8 @@ To run this project locally, follow these steps:
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/your-username/react-component-workbench.git
-    cd react-component-workbench
+    git clone https://github.com/Amaninreal/pi-shaped-frontend-Aman.git
+    cd pi-shaped-frontend-Aman
     ```
 
 2.  **Install dependencies:**
