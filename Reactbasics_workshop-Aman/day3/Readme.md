@@ -6,8 +6,9 @@
 
 This project is a comprehensive exercise for mastering essential and advanced patterns in modern React. It explores the practical application of React Hooks, the Context API for state management, and the power of TypeScript for building robust, scalable, and type-safe components.
 
-  
-*(To add a screenshot: upload your image to a service like Imgur and paste the link here)*
+![Light mode](my-app/screenshots/image.png)
+![Dark mode](my-app/screenshots/image-1.png)
+
 
 ---
 
