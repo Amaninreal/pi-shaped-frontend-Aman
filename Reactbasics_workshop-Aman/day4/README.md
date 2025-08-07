@@ -15,6 +15,15 @@ This application was created as part of the Day 4 "Advanced React" exercise.
 
 ---
 
+## 📸 Screenshots
+
+| Page Type | Screenshot |
+| :--- | :--- |
+| **Counter**| ![Counter Page Preview](screenshots/image-2.png) |
+| **Before Lazy Loading**<br/>*It doesn't store the page card* | ![Before Lazy loading](image-3.png)|
+| **After Lazy Loading**<br/>*It appears when I click on Settings* | ![After Lazy loading](image-4.png)|
+---
+
 ## 🏁 Getting Started
 
 To get the project up and running on your local machine, follow these steps.
@@ -78,41 +87,56 @@ Two test cases have been written to verify functionality:
 -   **`.prettierrc`**: Configured to enforce a consistent code style (e.g., single quotes, tab width).
 -   All files have been formatted and linted using the `npm run format` and `npm run lint` scripts.
 
+---
 
-# 🚀 Next.js Rendering Demo (next-rendering-demo)
+# 🚀 Next.js Rendering Strategies Demo
 
 This project is a Next.js application built with TypeScript to demonstrate and compare two primary rendering strategies: **Client-Side Rendering (CSR)** and **Server-Side Rendering (SSR)**.
 
-This application was created as part of the Day 4 "Advanced React" exercise.
+The application features a clean, modern UI, a backend API route, and a complete testing suite using Jest and React Testing Library to ensure functionality and illustrate best practices.
 
 ---
 
 ## ✨ Core Concepts Demonstrated
 
--   **Next.js API Routes**: Creating a backend endpoint (`/api/fruits`) to serve data.
--   **Client-Side Rendering (CSR)**: Fetching data on the client using React's `useEffect` hook.
--   **Server-Side Rendering (SSR)**: Pre-rendering a page on the server at request time using `getServerSideProps`.
--   **Comparison**: A clear, documented explanation of the pros and cons of each rendering method.
+-   **Next.js API Routes**: A backend endpoint (`/api/fruits`) created to serve data to the frontend.
+-   **Client-Side Rendering (CSR)**: A page that fetches data in the browser, showcasing a "skeleton" loading state.
+-   **Server-Side Rendering (SSR)**: A page that pre-renders with data on the server, delivering a complete page to the client.
+-   **Modern UI/UX**: A beautiful, responsive interface built with CSS Modules and Google Fonts.
+-   **Automated Testing**: A robust testing environment configured with Jest and React Testing Library.
+
+---
+
+
+## 📸 Screenshots
+
+| Page Type | Screenshot |
+| :--- | :--- |
+| **Client-Side Rendering (CSR)**<br/>*Shows a loading state first* | ![CSR Page Preview](screenshots/image.png) |
+| **Server-Side Rendering (SSR)**<br/>*Content is loaded instantly* | ![SSR Page Preview](screenshots/image-1.png) |
 
 ---
 
 ## 🏁 Getting Started
 
-To get the project up and running on your local machine, follow these steps.
+To get the project up and running on your local machine, please follow these steps.
 
-1.  **Clone the repository** (or download the source code).
+1.  **Clone the Repository**
+    ```bash
+    # Clone or download the source code into your chosen directory
+    ```
 
-2.  **Navigate to the project directory**:
+2.  **Navigate to the Project Directory**
     ```bash
     cd next-rendering-demo
     ```
 
-3.  **Install dependencies**:
+3.  **Install Dependencies**
     ```bash
     npm install
     ```
 
-4.  **Run the application**:
+4.  **Run the Development Server**
     ```bash
     npm run dev
     ```
@@ -120,54 +144,62 @@ To get the project up and running on your local machine, follow these steps.
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Available Scripts
 
--   `/pages/index.tsx`: The home page that links to the CSR and SSR examples.
--   `/pages/api/fruits.ts`: An API endpoint that returns a list of fruits.
--   `/pages/csr.tsx`: The page demonstrating **Client-Side Rendering**.
--   `/pages/ssr.tsx`: The page demonstrating **Server-Side Rendering**.
+-   `npm run dev`: Starts the application in development mode.
+-   `npm run build`: Creates an optimized production build.
+-   `npm run start`: Starts the production server.
+-   `npm run lint`: Lints the code for potential errors.
+-   `npm run test`: Runs the complete test suite using Jest.
 
 ---
 
-## 📋 CSR vs. SSR Comparison
+## 🔬 CSR vs. SSR: The Difference In My Words
 
-This project contains two pages to illustrate the difference between the rendering methods. Both pages fetch data from the same `/api/fruits` endpoint.
+Here's a simple breakdown of the two pages and what makes them different.
 
-### 1. Client-Side Rendering (CSR)
+| Client-Side Rendering (CSR)                                     | Server-Side Rendering (SSR)                                     |
+| :--------------------------------------------------------------: | :--------------------------------------------------------------: |
+| ![CSR Page Preview](https://i.imgur.com/nJgqL8t.png) | ![SSR Page Preview](https://i.imgur.com/M6X8w7d.png) |
+
+### 1. Client-Side Rendering (CSR) - The "Build-It-Yourself" Kit
 
 -   **Page**: [`/csr`](http://localhost:3000/csr)
--   **How it Works**:
-    1.  The browser receives a minimal HTML shell from the server.
-    2.  The browser downloads and executes the JavaScript bundle.
-    3.  The `useEffect` hook runs, triggering an API call to `/api/fruits`.
-    4.  A **loading state** is shown while the data is being fetched.
-    5.  Once the data arrives, the component re-renders to display the list of fruits.
--   **Pros**:
-    -   **Fast Initial Page Load**: The time to get an interactive page is very fast.
-    -   **Less Server Load**: The server's only job is to send a static shell and the JS bundle.
--   **Cons**:
-    -   **Poor for SEO**: Search engine crawlers may not see the final content, as they often don't wait for API calls to complete.
-    -   **Content Flash**: Users will see a "flash" of a loading state before the real content appears, which can feel slow.
+-   **Think of it like this**: The server sends your browser an empty box (the HTML) and a set of instructions (the JavaScript). Your browser then has to do the work: it reads the instructions, sees that it needs a list of fruits, makes a separate trip to the API to get them, and finally puts them on the page.
+-   **What you see**: You see a **loading skeleton** first because the browser is busy fetching the data.
+-   **The Good**: The initial page (the empty box) loads very fast.
+-   **The Bad**: The user has to wait for the content to appear, and it's not great for Google SEO because Google might see the empty box before you've filled it.
 
-### 2. Server-Side Rendering (SSR)
+### 2. Server-Side Rendering (SSR) - The "Pre-Built" Package
 
 -   **Page**: [`/ssr`](http://localhost:3000/ssr)
--   **How it Works**:
-    1.  A user requests the `/ssr` page.
-    2.  The Next.js server runs the `getServerSideProps` function **before** sending a response.
-    3.  This function fetches data from the `/api/fruits` endpoint on the server.
-    4.  The server uses the fetched data to render the complete HTML of the page.
-    5.  The fully-formed, content-rich HTML is sent directly to the browser.
--   **Pros**:
-    -   **Excellent for SEO**: Search engines see the complete content on the first crawl, leading to better indexing.
-    -   **No Content Flash**: The user sees the final page immediately upon loading; there is no loading state for the initial data.
--   **Cons**:
-    -   **Slower Time to First Byte (TTFB)**: The server must complete the data fetching and rendering *before* it can send anything to the browser, which can make the initial response slower.
-    -   **Higher Server Load**: The server does more work for every incoming request.
+-   **Think of it like this**: The server does all the work upfront. Before it sends anything, it builds the page, makes the trip to the API itself, gets the fruits, and puts them into the HTML. It then sends the complete, fully-assembled package directly to your browser.
+-   **What you see**: The page appears **instantly with all the content**. There is no loading state.
+-   **The Good**: It's great for the user because everything is there at once, and it's perfect for Google SEO because the content is in the initial HTML.
+-   **The Bad**: It can feel slightly slower to load at the very beginning because the user has to wait for the server to finish building everything before it can send the page.
 
-### How to Observe the Difference
+---
 
-1.  **Network Tab**: Open your browser's DevTools. On the CSR page, you will see a `fruits` API call initiated from the browser. On the SSR page, you will not see this call, as it happened on the server.
-2.  **View Page Source**: Right-click on each page and select "View Page Source".
-    -   On the CSR page, the source code will be minimal, and you won't see the list of fruits.
-    -   On the SSR page, the source code will contain the fully rendered HTML, including the `<li>` elements for each fruit.```
+### ✅ How to Verify the Difference Yourself
+
+You can use your browser's DevTools to see these concepts in action:
+
+| Test Method            | On the CSR Page (`/csr`)                                         | On the SSR Page (`/ssr`)                                    |
+| :--------------------- | :--------------------------------------------------------------- | :---------------------------------------------------------- |
+| **Network Tab**        | Reload the page. You will see a `fruits` API call from the browser. | Reload the page. You will **NOT** see a client-side `fruits` API call. |
+| **"View Page Source"** | The initial HTML source code will **not** contain the fruit list. | The initial HTML source code will contain the **fully rendered** list of fruits. |
+
+---
+
+## Automated Testing Strategy
+
+The project is configured with Jest and React Testing Library.
+
+-   **Test Setup**: Configuration is handled in `jest.config.js` and `jest.setup.js`. The setup file correctly imports `@testing-library/jest-dom` to provide custom matchers like `.toBeInTheDocument()`.
+-   **Testing the CSR Page (`pages/csr.test.tsx`)**:
+    -   The test **mocks the global `fetch` function** to return a predefined list of fruits.
+    -   It first asserts that a loading state is shown.
+    -   It then uses `await waitFor()` to assert that the list appears after the mocked fetch completes.
+-   **Testing the SSR Page (`pages/ssr.test.tsx`)**:
+    -   This test is simpler. It directly **passes a `fruits` prop** to the component, simulating the behavior of `getServerSideProps`.
+    -   It asserts that the content is rendered immediately without any waiting or loading states.
