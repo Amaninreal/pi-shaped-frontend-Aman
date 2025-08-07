@@ -154,13 +154,7 @@ To get the project up and running on your local machine, please follow these ste
 
 ---
 
-## 🔬 CSR vs. SSR: The Difference In My Words
-
-Here's a simple breakdown of the two pages and what makes them different.
-
-| Client-Side Rendering (CSR)                                     | Server-Side Rendering (SSR)                                     |
-| :--------------------------------------------------------------: | :--------------------------------------------------------------: |
-| ![CSR Page Preview](https://i.imgur.com/nJgqL8t.png) | ![SSR Page Preview](https://i.imgur.com/M6X8w7d.png) |
+## 🔬 CSR vs. SSR: The Difference
 
 ### 1. Client-Side Rendering (CSR) - The "Build-It-Yourself" Kit
 
