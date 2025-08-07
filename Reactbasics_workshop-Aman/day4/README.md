@@ -1,4 +1,4 @@
-# 🚀 Advanced React Demo (react-advanced-demo)
+# Advanced React Demo (react-advanced-demo) - Aman Jha
 
 This project is a React application built with TypeScript to demonstrate advanced concepts including performance optimization, lazy loading, testing with React Testing Library, and enforcing code quality with ESLint and Prettier.
 
@@ -6,7 +6,7 @@ This application was created as part of the Day 4 "Advanced React" exercise.
 
 ---
 
-## ✨ Core Concepts Demonstrated
+## Core Concepts Demonstrated
 
 -   **Performance Optimization**: Using `useMemo` to memoize expensive computations and `React.memo` to prevent unnecessary component re-renders.
 -   **Lazy Loading**: Using `React.lazy` and `<Suspense>` to code-split a component and load it on demand.
@@ -15,7 +15,7 @@ This application was created as part of the Day 4 "Advanced React" exercise.
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Page Type | Screenshot |
 | :--- | :--- |
@@ -24,7 +24,7 @@ This application was created as part of the Day 4 "Advanced React" exercise.
 | **After Lazy Loading**<br/>*It appears when I click on Settings* | ![After Lazy loading](image-4.png)|
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 To get the project up and running on your local machine, follow these steps.
 
@@ -48,7 +48,7 @@ To get the project up and running on your local machine, follow these steps.
 
 ---
 
-## 🛠️ Available Scripts
+## Available Scripts
 
 This project includes several scripts to help with development:
 
@@ -60,7 +60,7 @@ This project includes several scripts to help with development:
 
 ---
 
-## 📋 Features Implemented
+## Features Implemented
 
 ### 1. Performance-Optimized Counter (`src/components/Counter.tsx`)
 
@@ -89,7 +89,7 @@ Two test cases have been written to verify functionality:
 
 ---
 
-# 🚀 Next.js Rendering Strategies Demo
+# Next.js Rendering Strategies Demo
 
 This project is a Next.js application built with TypeScript to demonstrate and compare two primary rendering strategies: **Client-Side Rendering (CSR)** and **Server-Side Rendering (SSR)**.
 
@@ -97,7 +97,7 @@ The application features a clean, modern UI, a backend API route, and a complete
 
 ---
 
-## ✨ Core Concepts Demonstrated
+## Core Concepts Demonstrated
 
 -   **Next.js API Routes**: A backend endpoint (`/api/fruits`) created to serve data to the frontend.
 -   **Client-Side Rendering (CSR)**: A page that fetches data in the browser, showcasing a "skeleton" loading state.
@@ -108,7 +108,7 @@ The application features a clean, modern UI, a backend API route, and a complete
 ---
 
 
-## 📸 Screenshots
+## Screenshots
 
 | Page Type | Screenshot |
 | :--- | :--- |
@@ -117,7 +117,7 @@ The application features a clean, modern UI, a backend API route, and a complete
 
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 To get the project up and running on your local machine, please follow these steps.
 
@@ -144,7 +144,7 @@ To get the project up and running on your local machine, please follow these ste
 
 ---
 
-## 🛠️ Available Scripts
+## Available Scripts
 
 -   `npm run dev`: Starts the application in development mode.
 -   `npm run build`: Creates an optimized production build.
@@ -154,7 +154,7 @@ To get the project up and running on your local machine, please follow these ste
 
 ---
 
-## 🔬 CSR vs. SSR: The Difference
+## CSR vs. SSR: The Difference
 
 ### 1. Client-Side Rendering (CSR) - The "Build-It-Yourself" Kit
 
@@ -174,7 +174,7 @@ To get the project up and running on your local machine, please follow these ste
 
 ---
 
-### ✅ How to Verify the Difference Yourself
+### How to Verify the Difference Yourself
 
 You can use your browser's DevTools to see these concepts in action:
 
