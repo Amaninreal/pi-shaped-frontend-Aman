@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.4s ease;
+  background: linear-gradient(135deg, #e0eafc 0%, #fceabb 100%);
+  min-height: 100vh;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #1f1c2c 0%, #3f2b96 100%);
+  color: #fff;
+}
+
+body.light {
+  background: linear-gradient(135deg, #e0eafc 0%, #fceabb 100%);
+  color: #000;
+}
+
+/* App wrapper */
+.App {
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Header */
+.App-header {
+  margin-bottom: 2.5rem;
+}
+
+.App-header h1 {
+  font-size: 2.75rem;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-clip: text;                    /* ✅ Added standard property */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+/* Card styles */
+.card {
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+body.dark .card {
+  background: rgba(30, 30, 60, 0.55);
+  color: #fff;
+  box-shadow: 0 12px 32px rgba(255, 255, 255, 0.08);
+}
+
+/* Settings block */
+.settings {
+  border-left: 4px solid #00c6ff;
+  padding-left: 1rem;
+  margin-top: 1.25rem;
+  text-align: left;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(to right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  background: linear-gradient(to right, #f7971e, #ffd200);
+  color: #333;
+  margin-top: 1rem;
+}
+
+.theme-toggle:hover {
+  background: linear-gradient(to right, #f76b1c, #f9d423);
+}
+
+/* Loading fallback */
+.loading {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #00c6ff;
+}
