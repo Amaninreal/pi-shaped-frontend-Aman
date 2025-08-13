@@ -24,6 +24,14 @@ This started as a simple assignment for Day 4 of a frontend workshop, just displ
 
 That was the spark for the **AI Recipe Suggester**: a smart kitchen assistant that connects to Google's live Gemini AI to dream up unique recipes on the fly based on the ingredients you have on hand.
 
+## Screenshots
+| Page Type | Screenshot |
+| :--- | :--- |
+| **Counter**<br/>*By apple & banana - Created nice cream* | ![AI Recipe Generator](screenshots/image.png)) |
+| **Dragonfruit & Elderberry Summer Sorbet**<br/>*By Dragon fruits & Elderberry* | ![Dragonfruit & Elderberry Summer Sorbet](screenshots/image-1.png)|
+
+---
+
 ### **The Magic: How It Actually Works**
 
 The user experience is simple, but the architecture underneath is what makes it powerful and secure.
@@ -144,6 +152,12 @@ We've all been there: facing a big project and staring at a blank to-do list, no
 The goal was to create a tool that acts like an expert project manager, reducing the mental load of planning and helping me get started right away.
 
 ---
+
+## Screenshots
+| Page Type | Screenshot |
+| :--- | :--- |
+| **Advanced AI Task Planner**<br/>*prompt - make my project deadline deliverables* | ![Advanced AI Task Planner](screenshots/image-2.png) |
+
 
 ### **Live Demo in Action**
 
