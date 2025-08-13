@@ -80,8 +80,8 @@ To run this project with a live AI connection, follow these steps:
 
 **1. Clone the Repository**
 ```bash
-git clone <your-repository-url>
-cd <repository-name>/day5/next-rendering-demo
+git clone https://github.com/Amaninreal/pi-shaped-frontend-Aman.git
+cd pi-shaped-frontend-Aman/Reactbasics_workshop-Aman/day5/next-rendering-demo
 ```
 
 **2. Install Dependencies**
