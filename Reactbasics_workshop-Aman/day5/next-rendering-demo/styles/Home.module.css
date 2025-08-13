@@ -1,0 +1,117 @@
+/* --- Global Styles & Body --- */
+body {
+  background-color: #f4f7f9;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+/* --- Main Content Card --- */
+.main {
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 700px;
+  padding: 2.5rem 3rem;
+  text-align: center;
+  border: 1px solid #e8e8e8;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(90deg, #0070f3, #00bfff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #667085;
+  margin-bottom: 2.5rem;
+}
+
+/* --- Fruit List Styling --- */
+.fruitList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.fruitItem {
+  display: flex;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #eaeaea;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.fruitItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.fruitItem::before {
+  content: '🍇'; /* Default icon */
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+/* Fun: Different icon per fruit */
+.fruitItem:nth-child(1)::before { content: '🍎'; }
+.fruitItem:nth-child(2)::before { content: '🍌'; }
+.fruitItem:nth-child(3)::before { content: '🍒'; }
+.fruitItem:nth-of-type(4)::before { content: '🐲'; } /* A little fun for Dragonfruit */
+.fruitItem:nth-child(5)::before { content: '🫐'; }
+
+/* --- CSR Loading Skeleton --- */
+.skeleton {
+  height: 60px; /* Match fruitItem height */
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* --- Navigation Link --- */
+.backLink {
+  display: inline-block;
+  margin-top: 2rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: #005bb5;
+  text-decoration: underline;
+}
