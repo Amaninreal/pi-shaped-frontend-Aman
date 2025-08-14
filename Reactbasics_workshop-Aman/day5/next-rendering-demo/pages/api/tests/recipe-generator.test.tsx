@@ -1,10 +1,8 @@
-// pages/__tests__/recipe-generator.test.tsx
-
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import RecipeGeneratorPage from '../../recipe-generator';
 
-// Mock the global fetch function to control API responses in our tests
+// Mocking the global fetch function to control API responses in our tests
 global.fetch = jest.fn();
 const mockedFetch = fetch as jest.Mock;
 

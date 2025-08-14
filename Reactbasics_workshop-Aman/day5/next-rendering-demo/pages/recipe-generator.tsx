@@ -1,10 +1,9 @@
-// pages/recipe-generator.tsx
 import { useState } from 'react';
 import { GetStaticProps } from 'next';
 import { fruits as fruitList } from '../data/fruits';
 import styles from '../styles/Home.module.css';
 
-// Define types for our state
+// defined types for our state
 type Recipe = {
   title: string;
   ingredients: string[];
@@ -100,7 +99,6 @@ const RecipeGeneratorPage = ({ availableFruits }: Props) => {
   );
 };
 
-// Use getStaticProps to fetch the fruit list at build time
 export const getStaticProps: GetStaticProps<Props> = async () => {
   return {
     props: {

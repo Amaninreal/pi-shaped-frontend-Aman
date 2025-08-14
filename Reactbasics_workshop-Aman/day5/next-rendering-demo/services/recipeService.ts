@@ -8,7 +8,6 @@ export type RecipeResponse = {
 
 const googleAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
 
-// V-- THIS IS THE FIX: Use a current, supported model name. --V
 const generativeModel = googleAI.getGenerativeModel({ model: 'gemini-1.5-flash-latest' });
 
 /**

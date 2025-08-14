@@ -1,10 +1,7 @@
-// FINAL CORRECT VERSION for pages/csr.test.tsx
-
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import CSRPage from './csr';
 
-// This mock is ESSENTIAL. It tells the test environment what 'fetch' is.
 beforeAll(() => {
   global.fetch = jest.fn(() =>
     Promise.resolve({
